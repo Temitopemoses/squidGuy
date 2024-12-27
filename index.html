@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquidGuy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/WhatsApp Image 2024-12-25 at 11.59.19.jpeg" type="image/jpeg">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+           
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-bottom: 0; /* Remove any margin at the bottom */
+           }
+        .header img{
+           
+           width: 100%;
+           height: auto;
+           display: block;
+       }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+                        url('img/WhatsApp Image 2024-12-25 at 10.03.57.jpeg') no-repeat center center;
+            background-size: contain;
+            padding: 100px 20px;
+            text-align: center;
+            margin-top: 0; /* Align the hero section with the header */
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: #e93141;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #ddd;
+            margin: 20px 0;
+        }
+
+        .btn-custom {
+            background-color: #ff4757;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #e93141;
+        }
+
+        .social-icons i {
+            font-size: 2.5rem;
+            margin: 0 15px;
+            color: #e93141;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #ffd700;
+        }
+
+        .dex-chart iframe {
+            border: none;
+            width: 100%;
+            height: 500px;
+        }
+
+        .lore-section h2 {
+            font-size: 2.5rem;
+            color: #ffd700;
+        }
+
+        .lore-section p {
+            font-size: 1.1rem;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #0f0f1e;
+            color: #aaa;
+            padding: 20px 0;
+        }
+
+        /* Contract Address Section */
+        .contract-address-section {
+            background-color: #333;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .contract-address {
+            font-size: 1.2rem;
+            word-wrap: break-word;
+            color: #fff;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .copy-btn {
+            background-color: #ff4757;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background-color: #e93141;
+        }
+
+        /* Video Section */
+        .video-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .video-section video {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        /* Make header responsive */
+        @media (max-width: 768px) {
+            .header img{
+              margin-bottom: 0; /* Remove any margin at the bottom */
+              }
+            .hero {
+                padding: 50px 10px; /* Adjust padding for smaller screens */
+   
+
+            .hero h1 {
+                font-size: 2.5rem;
+                
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .video-section video {
+                width: 100%;
+            }
+
+            .contract-address-section {
+                padding: 20px;
+            }
+
+            .contract-address {
+                font-size: 1rem;
+            }
+
+            .copy-btn {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+           
+            .hero {
+                .hero {
+                padding: 30px 10px; /* Further adjust for mobile */
+            }
+
+   
+}
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .video-section video {
+                width: 100%;
+            }
+
+            .contract-address {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+
+            .copy-btn {
+                padding: 6px 12px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section for Logo -->
+<header class="header">
+    <img src="img\WhatsApp Image 2024-12-25 at 09.50.21.png" alt="squid Guy">
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Welcome to SquidGuy</h1>
+    <p>Your gateway to thrilling squid-to-Earn gaming where excitement meets opportunity!</p>
+    <a href="#about" class="btn btn-custom">Join the Game</a>
+</section>
+
+<!-- Video Section -->
+<section class="video-section">
+    <h2>Watch Our 1-Minute Intro Video</h2>
+    <video autoplay loop controls>
+        <source src="vid/WhatsApp Video 2024-12-25 at 11.33.02.mp4" type="video/mp4">
+        <source src="vid/WhatsApp Video 2024-12-25 at 11.33.02.webm" type="video/webm">
+        <source src="vid/WhatsApp Video 2024-12-25 at 11.33.02.ogv" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!-- Contract Address Section -->
+<section class="contract-address-section" id="contract">
+    <h2>Our Contract Address</h2>
+    <p>Copy the contract address below to interact with our token:</p>
+    <div class="contract-address">
+        2pHa571NDXZ5oduzXaiPyeASh8aH4UoScKxwX5vFpump
+    </div>
+    <button class="copy-btn" onclick="copyAddress()">Copy Address</button>
+</section>
+
+<!-- Lore Section -->
+<section class="lore-section" id="lore">
+    <h2>The Lore of Squid Game v2: The Crypto Showdown</h2>
+    <p>In a world where the financial system was rigged and the crypto markets were a jungle of rug pulls and moonshots, a mysterious entity known only as "The Architect" emerged from the shadows. Their goal? To create a new kind of game where the stakes were higher than ever—but the rewards were life-changing. Thus, Squid Game v2 was born.</p>
+    <p>The premise was simple: hundreds of degens, whales, and crypto newbies gathered to compete in a series of games based on the high-octane chaos of the meme coin universe. But this wasn’t just any game. It was a proof-of-diamond-hands tournament. Every player staked their bags, not knowing if they’d 10x or get liquidated.</p>
+    <ul>
+        <li><strong>Green Light, Red Candle</strong> – A classic game with a twist. Move too fast when the market dumps? You're out. Panic sell? Eliminated. The survivors moved on.</li>
+        <li><strong>Token Tug-of-War</strong> – Teams of HODLers pulled their collective market cap against FUD and paper hands. Only the strongest communities made it through.</li>
+        <li><strong>The Rug Pull Relay</strong> – Players navigated a course filled with honeypots and sketchy contracts, relying on their instincts to avoid the ultimate crypto betrayal.</li>
+    </ul>
+    <p>And the grand finale? <strong>Whale or Bail</strong> – A massive showdown where participants had to predict whether the market whales would pump or dump the token. One wrong move could wipe out your portfolio—or cement your status as a crypto legend.</p>
+    <p>Ready to play? Your wallet address is your ticket. Let the games begin.</p>
+</section>
+
+<!-- Social Media Section: Connect with Us -->
+<section class="social-icons text-center py-4" id="about">
+    <h2>Connect with Us</h2>
+    <a href="https://t.me/squidguysol" target="_blank"><i class="bi bi-telegram"></i></a>
+    <a href="https://x.com/squidguycto" target="_blank"><i class="bi bi-twitter"></i></a>
+    <a href="https://www.tiktok.com/@squidguysol" target="_blank"><i class="bi bi-tiktok"></i></a>
+</section>
+
+<!-- Dex Screener Link Section -->
+<section class="dex-link text-center my-5">
+    <h2>Check Live Price Chart</h2>
+    <p>Click the button below to view the live price chart on Dex Screener.</p>
+    <h3 class="text-primary">$SQUIDGUY</h3>
+    <a href="https://dexscreener.com/solana/2pHa571NDXZ5oduzXaiPyeASh8aH4UoScKxwX5vFpump" 
+       target="_blank" 
+       class="btn btn-custom">
+        View Chart on Dex Screener
+    </a>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer text-center py-3">
+    <p>&copy; 2024 SquidCrypto. All Rights Reserved.</p>
+    <small>Disclaimer: Cryptocurrency involves risks. Invest responsibly.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Function to copy the contract address to clipboard
+    function copyAddress() {
+        const address = document.querySelector('.contract-address').textContent;
+        navigator.clipboard.writeText(address).then(function() {
+            alert('Contract address copied to clipboard!');
+        }).catch(function(error) {
+            alert('Failed to copy address: ' + error);
+        });
+    }
+</script>
+</body>
+</html>
